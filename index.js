@@ -9,10 +9,7 @@ function background(){
      * Desenvolva uma função capaz de trocar a cor do fundo da página, ou seja,
      * alterar o background do body para a cor #BECCC3.
      */
-    //https://www.w3schools.com/js/js_htmldom_css.asp setElement style
-    //document.setElementById(backgroundColor).style.property = '#BECCC3';// -> não rolo, tentar navegando pela árvore
     document.body.style.backgroundColor = '#BECCC3'
-    //não consigo fazer o teste funcionar 
 }
 
 /**
@@ -28,13 +25,9 @@ function show(){
       * Recupera os valores dos campos de texto cujo o id='fname' e id='lname' e apresente o nome
       * e o sobrenome de uma pessoa (separado por um espaço) na div id='result'
       */
-     //https://www.w3schools.com/js/js_htmldom_document.as
-     //getElementById (fname+lname) = id=result -> create?
-     let nome = document.getElementById("fname");
-     let sobrenome = document.getElementById("lname")
-     document.getElementbyId("result") = nome + " " + sobrenome;
-     //Nãorolou
-
+    let nome = document.getElementById('fname').value;
+    let sobrenome = document.getElementById('lname').value;
+    document.getElementById('result').innerHTML = nome + " " + sobrenome;
 }
 
 /**
