@@ -10,6 +10,9 @@ function background(){
      * alterar o background do body para a cor #BECCC3.
      */
     //https://www.w3schools.com/js/js_htmldom_css.asp setElement style
+    //document.setElementById(backgroundColor).style.property = '#BECCC3';// -> não rolo, tentar navegando pela árvore
+    document.body.style.backgroundColor = '#BECCC3'
+    //não consigo fazer o teste funcionar 
 }
 
 /**
@@ -27,6 +30,11 @@ function show(){
       */
      //https://www.w3schools.com/js/js_htmldom_document.as
      //getElementById (fname+lname) = id=result -> create?
+     let nome = document.getElementById("fname");
+     let sobrenome = document.getElementById("lname")
+     document.getElementbyId("result") = nome + " " + sobrenome;
+     //Nãorolou
+
 }
 
 /**
