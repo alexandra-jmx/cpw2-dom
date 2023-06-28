@@ -9,7 +9,7 @@ function background(){
      * Desenvolva uma função capaz de trocar a cor do fundo da página, ou seja,
      * alterar o background do body para a cor #BECCC3.
      */
-
+    //https://www.w3schools.com/js/js_htmldom_css.asp setElement style
 }
 
 /**
@@ -25,6 +25,8 @@ function show(){
       * Recupera os valores dos campos de texto cujo o id='fname' e id='lname' e apresente o nome
       * e o sobrenome de uma pessoa (separado por um espaço) na div id='result'
       */
+     //https://www.w3schools.com/js/js_htmldom_document.as
+     //getElementById (fname+lname) = id=result -> create?
 }
 
 /**
@@ -51,6 +53,7 @@ function search(){
      *
      * Além disso, a função removeAllChildren abaixo também pode ser útil para o desenvolvimento da solução
      */
+    //SOS
 
 }
 
