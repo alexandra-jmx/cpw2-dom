@@ -56,6 +56,20 @@ function search(){
      */
     //SOS
 
+    let result = document.getElementById("search");
+    removeAllChildren(result)
+    
+    let input = document.getElementById("name").value;
+    
+    for(let j = 0; j < data.length;j++) {
+        if(input.length == 0){
+            removeAllChildren(result)
+        } else if (input.toUpperCase() == data[j].name.substr(0, input.length).toUpperCase()){
+            let x = document.createElement("p")
+            x.innerHTML = `${data[j].name} \n`
+            result.appendChild(x)
+            }
+    }
 }
 
 /**
